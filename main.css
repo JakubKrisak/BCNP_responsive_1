@@ -1,0 +1,29 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .example {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+body {
+    margin: 0;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+footer{
+  font-size: 12px;
+  color: white;
+  background-color: #333333;
+  text-align: center;
+
+  margin: auto;
+  padding: 20px;
+}
+
+
+
+

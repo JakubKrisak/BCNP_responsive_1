@@ -1,0 +1,86 @@
+/* Mobile phone responsive */
+
+@media only screen and (max-width: 600px) {
+    header {
+        background: #333333;
+        color: white;
+    
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 
+                               1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 10px;
+    }    
+
+    #logo{
+        margin: auto;
+        grid-column: 2/8;
+        grid-row: 1/2;
+    }
+
+    /* NAVIGATION NO-EXIST UNDER 600px FOR MOBILE PHONE RESPONSIVE */
+    #navigation{
+        text-align: center;
+        display: none;
+
+        font-size: 24px;
+        grid-column: 2/12;
+        grid-row: 2/3;
+    }
+
+    /* ------------------------------------ */
+
+    
+    /* NAVIGATION DROPDOWN */
+      
+      #dropdown {
+        font-size: 50px;
+        position: relative;
+        display: inline-block;
+
+        grid-column: 8/12;
+        grid-row: 1/2;
+      }
+      
+      .dropbtn {
+        background-color: #333333;
+        color: white;
+        padding: 40px;
+        font-size: 40px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333333;
+        min-width: 160px;
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: white;
+        font-size: 20px;
+        padding: 15px 30px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:after,
+      .dropdown-content a:hover {
+        background-color: white;
+        color: black;
+    }
+      
+      #dropdown:after,
+      #dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      #dropdown:after,
+      #dropdown:hover .dropbtn {
+        background-color: #333333;
+      }
+}

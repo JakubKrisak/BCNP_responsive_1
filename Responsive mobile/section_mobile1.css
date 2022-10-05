@@ -1,0 +1,99 @@
+/* Mobile phone responsive */
+
+@media only screen and (max-width: 600px) {
+
+    section {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 
+                               1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 10px;
+    
+        text-align: center;
+        color: white;
+    }
+
+    #maincamp {
+        padding: 0px 10px 0px 10px;
+    }
+
+    #maincamp > h1{
+        margin: 0px;
+        font-size: 36px;
+        line-height: 40px;
+        grid-column: 2/12;
+        grid-row: 2/3;
+    }
+    
+    #maincamp > .text {
+        margin: 0px;
+        margin-bottom: 30px;
+        line-height: 24px;
+        font-size: 16px;
+        
+        grid-column: 3/11;
+        grid-row: 3/5;
+    }
+
+    /* BUTTONS */
+
+    .mainbuttons{
+        margin: 0;
+        font-size: 16px;
+        margin-bottom: 150px;
+    
+        grid-column: 3/11;
+        grid-row: 5/7;
+    }
+    
+    .mainbuttons > a{
+        font-size: 16px;
+        display: block;
+        color: white;
+        border: 4px solid white;
+        padding: 20px 30px;
+        border-radius: 50px;
+        text-decoration: none;
+    }
+
+    .mainbuttons > .buttongreen{
+        font-size: 16px;
+        margin-bottom: 10px;
+        display: block;
+        font-size: 16px;
+        color: white;
+        border: 4px solid #a79770;
+        padding: 10px 10px;
+        border-radius: 50px;
+        text-decoration: none;
+    }
+
+    .mainbuttons > .buttonwhite{
+        padding: 10px 10px;
+    }
+
+    /* ICONS */
+
+    #maincamp > .mainicons{
+        grid-column: 2/12;
+        grid-row: 6/8;
+    }
+
+    #hikking{
+        font-size: 40px;
+        padding-right: 40px;
+        color: white;
+    }
+    
+    #camp{
+        font-size: 40px;
+        color: white;
+    }
+    
+    #fire{
+        font-size: 40px;
+        padding-left: 40px;
+        color: white;
+    }
+}
